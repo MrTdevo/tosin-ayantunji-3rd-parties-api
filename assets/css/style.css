@@ -2,25 +2,66 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
-
 .swim-lanes {
   min-height: 60vh;
 }
-
 .task-card {
   margin: 0 auto;
-}
-
-.task-card:hover {
   cursor: grab;
 }
-
 .card-body {
   position: relative;
+  min-height: 150px;
 }
-
+.card-body .card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.card-body .card-subtitle {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.card-body .card-text {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
 .btn-close {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+.card-header {
+  background-color: #f8f9fa;
+}
+.card-body {
+  background-color: #e9ecef;
+}
+.lane {
+  margin-bottom: 30px;
+}
+.lane .card-title {
+  font-size: 1.5em;
+}
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+.bg-white {
+  background-color: #ffffff !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
+.text-dark {
+  color: #343a40 !important;
+}
+@media (max-width: 768px) {
+  .card-body {
+    padding: 10px;
+  }
+  .lane {
+    margin-bottom: 20px;
+  }
 }
